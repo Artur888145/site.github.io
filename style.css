@@ -1,22 +1,201 @@
-.eee{
+.me_photo{
+   width: 140px;
+   border-radius: 10px;
+}
+.block1 td{
     font-size: 20px;
 }
-.zzz{
-    font-size: 30px;
+.block1 td{
+    word-break: normal;
 }
-.ggg{
-    font-size: 35px;
-}
-.eee, .ggg .zzz{
+.block10{
     text-align: center;
-	font-family: Arial;
 }
-h2.header{
-    font-size: 40px;
+.my_photo{
+    width: 550px;
+    border-radius: 10px;
 }
-h3.header{
-    font-size: 30px;
+.my_photo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
 }
-.bbb{
-    color: red;
+.block17{
+    font-size: large;
+    text-align: center;
+}
+.caas{
+    text-align: center;
+    font-size: x-large;
+}
+nav{
+    background-color:black;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    margin: 0 auto;
+    color: whiter;
+}
+nav A:hover{
+    background-color: blue;
+    color: white;
+}
+iframe{
+    margin: 20px 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 450px;
+    display: block;
+}
+h1{
+    text-align: center;
+}
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+#menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    background-color: #d7b923;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+#menu a {
+    margin: 0 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font: bold 14px Arial;
+}
+
+#menu a:hover, #menu a.active {
+    color: #d7b923;
+    background-color: #ffffff;
+}
+
+#content {
+    margin-top: 60px; /* Отступ для фиксированного меню */
+    padding: 20px 20px 20px;
+    border: 1px solid #806b00;
+    box-sizing: border-box;
+}
+
+#content h1 {
+    text-align: center;
+    margin-top: 0;
+    color: #806b00;
+    margin-bottom: 10px;
+}
+
+#content p {
+    color: #806b00;
+    text-indent: 30px;
+    padding: 0 10px;
+    margin-bottom: 30px;
+    font: 18px/1.3 Arial;
+    text-align: justify;
+}
+
+#footer {
+    display: flex;
+    position:static;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #c4aa26;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 20px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    img {
+        max-width: 80%; /* Уменьшаем изображение на маленьких экранах */
+    }
+}
+
+/* Медиа-запросы для адаптивности */
+
+/* Для экранов меньше 768px (планшеты и мобильные устройства) */
+@media (max-width: 768px) {
+    #menu {
+        flex-direction: column; /* Ссылки в столбик на маленьких экранах */
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    #menu a {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    #content {
+        margin-top: 100px; /* Больший отступ для меню */
+        padding: 0 10px 10px;
+    }
+
+    #content h1 {
+        font-size: 24px;
+    }
+
+    #content p {
+        font-size: 16px;
+        text-indent: 20px;
+    }
+
+    #footer {
+        padding: 0.5rem;
+        font-size: 14px;
+    }
+}
+
+/* Для экранов меньше 480px (мобильные устройства) */
+@media (max-width: 480px) {
+    #menu a {
+        padding: 5px 8px;
+        font-size: 10px;
+    }
+
+    #content {
+        margin-top: 120px; /* Еще больший отступ для меню */
+        padding: 0 5px 5px;
+    }
+
+    #content h1 {
+        font-size: 20px;
+    }
+
+    #content p {
+        font-size: 14px;
+        text-indent: 15px;
+    }
+
+    footer {
+        padding: 0.3rem;
+        font-size: 12px;
+    }
 }
