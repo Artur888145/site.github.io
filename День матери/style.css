@@ -1,0 +1,15 @@
+.charset{
+    text-align: center;
+}
+.block{
+    font-size: large;
+}
+body{
+    background: linear-gradient(126deg, #3CB371, #00FF7F);
+}
+.photo{
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
